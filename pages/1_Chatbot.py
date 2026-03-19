@@ -5,11 +5,11 @@ st.set_page_config(page_title="Data Chatbot", page_icon="🤖", layout="wide")
 
 @st.cache_data
 def load_data():
-    trips     = pd.read_csv("datasets/trips.csv")
-    cars      = pd.read_csv("datasets/cars.csv")
-    customers = pd.read_csv("datasets/customers.csv")
-    ratings   = pd.read_csv("datasets/ratings.csv")
-    cities    = pd.read_csv("datasets/cities.csv")
+    trips     = pd.read_csv("data/trips.csv")
+    cars      = pd.read_csv("data/cars.csv")
+    customers = pd.read_csv("data/customers.csv")
+    ratings   = pd.read_csv("data/ratings.csv")
+    cities    = pd.read_csv("data/cities.csv")
     trips["pickup_time"] = pd.to_datetime(trips["pickup_time"])
     merged = (
         trips
