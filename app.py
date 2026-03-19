@@ -16,7 +16,7 @@ def load_data():
     cars      = pd.read_csv("datasets/cars.csv")
     customers = pd.read_csv("datasets/customers.csv")
     ratings   = pd.read_csv("datasets/ratings.csv")
-    cities    = pd.read_csv("datasets/cities.csv")
+    cities    = pd.read_csv("datasets/cities.csv")  
 
     trips["pickup_time"]  = pd.to_datetime(trips["pickup_time"])
     trips["dropoff_time"] = pd.to_datetime(trips["dropoff_time"])
